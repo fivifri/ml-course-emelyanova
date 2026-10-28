@@ -1,0 +1,74 @@
+{
+  "random_forest": {
+    "Accuracy": 0.8673965936739659,
+    "Precision": 0.5493716337522442,
+    "Recall": 0.8010471204188482,
+    "F1": 0.6517571884984026,
+    "ROC-AUC": 0.9273509963722603,
+    "PR-AUC": 0.7285547875603324,
+    "train_time_sec": 0.800626500044018
+  },
+  "xgboost": {
+    "Accuracy": 0.8811841038118411,
+    "Precision": 0.5969498910675382,
+    "Recall": 0.7172774869109948,
+    "F1": 0.6516052318668252,
+    "ROC-AUC": 0.9216945865281224,
+    "PR-AUC": 0.7133548904122786,
+    "train_time_sec": 0.5939622999867424
+  },
+  "lightgbm": {
+    "Accuracy": 0.8746958637469586,
+    "Precision": 0.5703275529865125,
+    "Recall": 0.774869109947644,
+    "F1": 0.6570477247502775,
+    "ROC-AUC": 0.9282604435690526,
+    "PR-AUC": 0.7292319788672343,
+    "train_time_sec": 0.22776189993601292
+  },
+  "catboost": {
+    "Accuracy": 0.8698296836982968,
+    "Precision": 0.5559633027522936,
+    "Recall": 0.7931937172774869,
+    "F1": 0.6537216828478964,
+    "ROC-AUC": 0.9282428575735345,
+    "PR-AUC": 0.7371228462252757,
+    "train_time_sec": 1.3057518999557942
+  },
+  "logistic_regression_baseline": {
+    "Accuracy": 0.8426601784266018,
+    "Precision": 0.49471830985915494,
+    "Recall": 0.7356020942408377,
+    "F1": 0.5915789473684211,
+    "ROC-AUC": 0.8844499603058957,
+    "PR-AUC": 0.6271666876869899
+  },
+  "best_model": "LightGBM (Optuna)",
+  "best_model_test_metrics": {
+    "Accuracy": 0.8678021086780211,
+    "Precision": 0.5484429065743944,
+    "Recall": 0.8298429319371727,
+    "F1": 0.6604166666666667,
+    "ROC-AUC": 0.9330224799268423,
+    "PR-AUC": 0.7523884287776859
+  },
+  "best_cv_roc_auc": 0.9357624246248435,
+  "baseline_lightgbm_cv_roc_auc": 0.9305001544663769,
+  "best_ensemble_before_tuning": "LightGBM",
+  "best_params": {
+    "n_estimators": 300,
+    "num_leaves": 45,
+    "max_depth": 7,
+    "learning_rate": 0.011575543666882692,
+    "subsample": 0.8279993205960767,
+    "colsample_bytree": 0.5311540154297647,
+    "min_child_samples": 48,
+    "reg_alpha": 0.6404825703012398,
+    "reg_lambda": 0.06115185079793613,
+    "subsample_freq": 1
+  },
+  "calibration_bonus": {
+    "brier_raw": 0.09812735052980888,
+    "brier_calibrated": 0.06918294099809366
+  }
+}
