@@ -1,6 +1,6 @@
 # 🛒 Module 4 — Online Shoppers: Инженерия признаков
 
-**Автор:** [ФИО], [группа]
+**Автор:** Емельянова К. П., ПКТб-23-1
 **Дата:** 2026-10-28
 
 ## 📊 Результаты (тестовая выборка)
@@ -21,7 +21,7 @@
 import joblib, requests, json
 from io import BytesIO
 
-BASE_URL = 'https://raw.githubusercontent.com/<username>/<repo>/main/module-4-features'
+BASE_URL = 'https://raw.githubusercontent.com/fivifri/ml-course-emelyanova/main/module-4-features'
 model = joblib.load(BytesIO(requests.get(f'{BASE_URL}/models/best_model.pkl').content))
 features = requests.get(f'{BASE_URL}/models/feature_cols.json').json()
 ```
